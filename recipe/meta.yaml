@@ -2,6 +2,7 @@
 {% set name_pypi = "idds_workflow" %}
 {% set version = "2.6.12" %}
 
+
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -11,9 +12,10 @@ source:
   sha256: ae7d9ebe2968f6a6929cb66758ebd40efdde150adb645b145c7577f78140c444
 
 
+
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
